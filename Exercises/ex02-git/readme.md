@@ -83,7 +83,7 @@ Let's work on some Javadocs to have something to ignore ...
 1. At the command prompt, make sure you are in the current repo.
 1. `mkdir docs` to create a documentation folder.
 1. `cd docs` to move to the folder.
-1. `javadoc ../*.docs` to create the html pages.
+1. `javadoc ../*.java` to create the html pages.
 1. `cd ..` to move back up a level
 1. `git add *`
 1. `git commit -m "adding docs"`
