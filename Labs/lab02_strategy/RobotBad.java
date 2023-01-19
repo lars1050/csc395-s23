@@ -1,7 +1,7 @@
 import java.util.Random;
 
 /** Generic Robot */
-public class Robot {
+public class RobotBad {
 
   Random rand = new Random();
 
@@ -14,12 +14,12 @@ public class Robot {
   private int maxDistance = 50;
 
   /** Default Constructor */
-  public Robot() {
+  public RobotBad() {
     this("Anonymous");
   }
 
   /** Constructor */
-  public Robot(String name) {
+  public RobotBad(String name) {
     this.name = name;
 
     // Place the robot at a random location within the fixed grid

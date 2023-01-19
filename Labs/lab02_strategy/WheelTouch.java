@@ -1,5 +1,5 @@
 /** Wheeled Differential Drive Robot using a Camera */
-public class WheelTouch extends Robot {
+public class WheelTouch extends RobotBad {
 
   public WheelTouch(String name) {
     setName(name);

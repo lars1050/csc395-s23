@@ -1,5 +1,5 @@
 /** Wheeled Differential Drive Robot using an IR Sensor */
-public class WheelIR extends Robot {
+public class WheelIR extends RobotBad {
 
   public WheelIR(String name) {
     setName(name);

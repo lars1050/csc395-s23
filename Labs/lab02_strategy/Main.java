@@ -3,7 +3,7 @@ public class Main {
 
     System.out.println("^^^^^^^^  ROBOTS  ^^^^^^^");
 
-    Robot rosie = new Robot("Rosie");
+    RobotBad rosie = new RobotBad("Rosie");
 
     WheelIR eva = new WheelIR("Eva");
 
@@ -11,8 +11,8 @@ public class Main {
 
     OmniIR walle  = new OmniIR("Wall-E");
 
-    Robot[] robots = {rosie, eva, roomba, walle};
-    for (Robot robot : robots) {
+    RobotBad[] robots = {rosie, eva, roomba, walle};
+    for (RobotBad robot : robots) {
       System.out.println("----------------------------");
       robot.describe();
       robot.move(45,10);

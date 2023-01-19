@@ -1,6 +1,6 @@
 /** Omni-Directional Robot that uses an IR Sensor */
 // Omni-directional robots can turn in place
-public class OmniIR extends Robot {
+public class OmniIR extends RobotBad {
 
   /** Constructor */
   public OmniIR(String name) {
