@@ -2,7 +2,7 @@
 
 You are going to work in a team of 3 to create a todo list (a.k.a. issues) then redesign and refactor the Cart code from Lab 1. You will learn about git branches and git merge.
 
-A guide: <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank">Git Branching in ProGit</a>
+A guide: https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
 
 ### Use Case of the System
 
@@ -12,7 +12,7 @@ Context:
 
 A Cart is started and items are added to the cart. The cart keeps an on-going total of the items in the cart. When done shopping, there is a checkout process that is initiated through the cart. An order is created in the cart and returned. A receipt of the order is printed.
 
-UML and description here: <a href="https://docs.google.com/document/d/1LzjLWhJ1Sa6vjEQk22-zFDsl8vs3vrkERd6Cwq0GLnI/edit?usp=sharing" target="_blank">Cart Design UML</a>
+UML and description here: https://docs.google.com/document/d/1LzjLWhJ1Sa6vjEQk22-zFDsl8vs3vrkERd6Cwq0GLnI/edit?usp=sharing
 
 
 ### Adding Issues to Git Repository
