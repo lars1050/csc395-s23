@@ -2,19 +2,22 @@
 
 You are going to work in a team of 3 to create a todo list (a.k.a. issues) then redesign and refactor the Cart code from Lab 1. You will learn about git branches and git merge.
 
+A guide: https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
+
 ### Use Case of the System
 
 Context:
 - There is an inventory of Items. 
 - There is a database of Customers.
 
-A Cart is started and items are added to the cart. The cart keeps an on-going total of the items in the cart. When done shopping, there is a checkout process that is initiated through the cart. An order is processed through the cart and returned. A receipt of the order is printed.
+A Cart is started and items are added to the cart. The cart keeps an on-going total of the items in the cart. When done shopping, there is a checkout process that is initiated through the cart. An order is created in the cart and returned. A receipt of the order is printed.
 
+UML and description here: https://docs.google.com/document/d/1LzjLWhJ1Sa6vjEQk22-zFDsl8vs3vrkERd6Cwq0GLnI/edit?usp=sharing
 
 
 ### Adding Issues to Git Repository
 
-1. One person in your group create a git repository (you can keep it publice). Check the box to include a repo and a .gitignore (with a Java template). Include Dr. Larson and your partners as a collaborator (under Settings-Collaborators).
+1. One person in your group create a git repository (you can keep it public). Check the box to include a repo and a .gitignore (with a Java template). Include your partners as collaborators (under Settings-Collaborators), giving them .
 
 2. The others should clone the repo (use the https: not git).
 
@@ -38,13 +41,13 @@ You will probably have to set up an access token for github.
 Add the following issues:
 
 1. Create class Item
-2. Modify CartItem
+2. Refactor CartItem
 3. Create class Customer
-4. Modify customer in Order
-5. Refactor Cart
-5. Create add() method in Cart
-6. Create checkout() method in Cart
-8. Create receipt() method in Order
+4. Refactor Order: modify customer
+5. Refactor member variables in Cart
+5. Refactor Cart: create add() method
+6. Refactor Cart: Create checkout() method
+8. Refactor Order: Create receipt() method
 9. Modify Main to use and test the classes
 
 
@@ -61,7 +64,7 @@ git push --set-upstream origin dev
 
 That's it! You will not see any changes to your files, but you have just made a copy of the repo. Any changes that you make here will not impact the original files on the main branch.
 
-> The use of `-b` is for making a new branch. Once the branch exists, you can checkout different branches (without the `-b` flag) to return to differnt states of your code. The second line essentially connects your local branch to the original repo.
+> The use of `-b` is for making a new branch. Once the branch exists, you can checkout different branches (without the `-b` flag) to return to differnt states of your code. The second line essentially connects your local branch to the original repo on the server.
 
 Now have the other members checkout the branch with this command:
 
@@ -93,7 +96,7 @@ git push --set-upstream origin issue3-class-Customer
 
 Everyone else can pull to incorporate the branch.
 
-Each person develops the code on their respective branches. Once you have made the changes and the code is compiling, merge the changes into the dev branch. Here is the example for issue1:
+Each person develops the code on their respective branches. Once you have made the changes and **the code is compiling**, merge the changes into the dev branch. Here is the example for issue1:
 
 ```
 git checkout dev
@@ -110,6 +113,8 @@ Look at github to see the changes. Everyone can pull to incorporate the changes.
 
 Finally, go to the list of issues on github and check that the issues are complete.
 
+> There is a way to automate this process based on branch naming. Maybe we will look at this at another time.
+
 Now you are ready to repeat the process!
 
 ### More Issues
@@ -117,21 +122,21 @@ Now you are ready to repeat the process!
 As you choose which issues to divide and conquer in your group, keep in mind that you do not want 2 people editing the same file at the same time, since that is likely to lead to merge conflicts. Here is a possible plan.
 
 These issues can now be developed independently without breaking the code:
-- issue2: Modify CartItem
-- issue4: Modify Customer in Order
-- issue9: Modify Main for using and testing the class
+- issue2 Refactor CartItem
+- issue4 Refactor Order: modify customer
+- issue9 Modify Main for using and testing the class
 
 Once issue 2 is complete,
-- issue5: Refactor Cart
+- issue5 Refactor member variables in Cart
 
 Once issue 4 is complete,
-- issue8: Create receipt() in Order class
+- issue8 Refactor Order: Create receipt() method
 
 Once issue 5 is complete,
-- issue6: Create add() method in Cart
+- issue6 Refactor Cart: create add() method
 
 Once issue 6 is complete,
-- issue7: Create checkout() method in Cart
+- issue7 Refactor Cart: Create checkout() method
 
 And keep developing Main to try out the new classes. _Of course, this is where Unit Testing would come in! The unit tests would be developed along with the code and used to confirm the class is functional before merging it back into the dev branch._
 
