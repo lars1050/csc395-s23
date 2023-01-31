@@ -43,7 +43,7 @@ public class DisplayTask extends JComponent implements Runnable {
         while (true) {
             try {
                 Thread.sleep(sleep);
-            } catch (InterruptedException e) {
+            } catch (Exception e) {
 
             }
             toDraw = " RUNNING "+counter;
