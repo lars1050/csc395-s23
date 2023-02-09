@@ -18,9 +18,9 @@ import static org.junit.jupiter.api.Assertions.*;
 */
 
 @DisplayName(" Circle 🔴 🔴 ♥ 🔴 🔴 Tests ")
-class CircleTests {
+class CircleTest {
 
-    CircleTests() {
+    CircleTest() {
     }
 
     @Test
