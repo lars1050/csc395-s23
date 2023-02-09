@@ -22,21 +22,22 @@ Crediting Dr. Steinmetz for tracking this down:
 
 To compile the JUnit classes on the command line:
 
+MAC
+
 ```
 javac -cp .:./junit-platform-console-standalone-1.9.2.jar *.java
-```
-
-To run the tests in this class on the command line, use a command like
-
-```
 java -jar ./junit-platform-console-standalone-1.9.2.jar -cp . --scan-classpath .
-```
-
-or
-
-```
 java -jar ./junit-platform-console-standalone-1.9.2.jar -cp . --select-class CircleTest
 ```
+
+WINDOWS 
+
+```
+javac -cp ".;./junit-platform-console-standalone-1.9.2.jar" *.java
+java -jar ./junit-platform-console-standalone-1.9.2.jar -cp "." --scan-classpath "."
+java -jar ./junit-platform-console-standalone-1.9.2.jar -cp "." --select-class CircleTest
+```
+
 
 <hr>
 
