@@ -35,7 +35,7 @@ java -jar ./junit-platform-console-standalone-1.9.2.jar -cp . --scan-classpath .
 or
 
 ```
-java -jar ./junit-platform-console-standalone-1.9.2.jar -cp . --select-class CircleTests
+java -jar ./junit-platform-console-standalone-1.9.2.jar -cp . --select-class CircleTest
 ```
 
 <hr>
