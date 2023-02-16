@@ -17,11 +17,12 @@ public class Remote {
     }
 
     /*
-     * CircleA and B are power on/off for tv
-     * CircleC and D are power on/off for Stereo
-     * CircleE is input for Stereo
-     * UpA and DownB are tv volume
-     * UpC and DownD are stereo volume
+     * POWERA power on/off for tv
+     * POWERB power on/off for Stereo
+     * UPA1,DOWNA1 volume tv
+     * UPA2, DOWNA2, channel tv
+     * UPB and DOWNB are volume for stereo
+     * Source input for the stereo
      */
     void buttonPressed(Buttons b) {
         switch (b) {
