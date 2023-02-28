@@ -42,6 +42,8 @@ Below are some flags/options you can use in the commands. **Every option I have 
 
 ### Creating and Using Jars
 
+1. Compile the code to create the `.class` files.
+
 1. Create a jar file for the Tic-Tac-Toe game that can be distributed and run. Note that there are files in the `images` directory that are used in the application. You will need to also include this folder when you make your jar. (https://docs.oracle.com/javase/tutorial/deployment/jar/build.html).
 
 1. View the contents of the jar. Use the verbose option so that you can see everything. (https://docs.oracle.com/javase/tutorial/deployment/jar/view.html).
