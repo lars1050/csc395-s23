@@ -40,7 +40,7 @@ Below are some flags/options you can use in the commands. **Every option I have 
 | m | Manifest file available |
 | e | Executable (main) for the application |
 
-### What To Do
+### Creating and Using Jars
 
 1. Create a jar file for the Tic-Tac-Toe game that can be distributed and run. Note that there are files in the `images` directory that are used in the application. You will need to also include this folder when you make your jar. (https://docs.oracle.com/javase/tutorial/deployment/jar/build.html).
 
@@ -52,6 +52,8 @@ Below are some flags/options you can use in the commands. **Every option I have 
 
 1. Run the jar file and play the game. (Let someone win!)
 
+You can also experiment with extracting the files so that you can run them with `java Game`.
+
 <hr>
 
 #### Packages
@@ -60,17 +62,19 @@ To get started, we will be creating a directory structure that you might encount
 
 1. Create a new directory structure like this (these are all folders) ...
 
+```
 java-packages
     - src
         - augsburg
             - game
     - bin
+```
 
 1. Move the `*.java` files from the game into the `game` folder. 
 
 1. At the top of each `.java` file, add `package augsburg.game;`.
 
-1. Compile the files and use the `bin` directory as the desitination for all `*.class` files.
+1. In the `game-packages` directory, compile the files and use the `bin` directory as the desitination for all `*.class` files.
 
 <code>javac -d ./bin ./src/augsburg/game/*.java</code>
 
@@ -88,7 +92,10 @@ You will notice that when you click a box, the images no longer appear. That is 
 
 <hr>
 
-I am still working on how to capture everything into a jar when it is in a package. It cannot find the executable (which has something to do with how I am referencing the path).  I will update here when I figure it out! 
+See if you can figure out how to put your game package in a jar file and execute it with `java -jar`.
+
+https://docs.oracle.com/javase/tutorial/deployment/jar/sealman.html
+
 
 
 
